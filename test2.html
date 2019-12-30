@@ -1,0 +1,704 @@
+<html data-ember-extension="1"><head>
+    <!-- Title -->
+    <title>Home Page | Front - Responsive Website Template</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+<style>
+/* Variables */
+/* Media queries */
+/*
+
+  TACHYONS BACKGROUND OVERLAYS
+
+  Add an overlay to background images.
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+*/
+.bg-darken-0 { box-shadow: none; }
+.bg-darken-25 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+.bg-darken-50 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+.bg-darken-75 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+.bg-lighten-0 { box-shadow: none; }
+.bg-lighten-25 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+.bg-lighten-50 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+.bg-lighten-75 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+@media screen and (min-width: 30em) {
+ .bg-darken-0-ns { box-shadow: none; }
+ .bg-darken-25-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-ns { box-shadow: none; }
+ .bg-lighten-25-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+ .bg-darken-0-m { box-shadow: none; }
+ .bg-darken-25-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-m { box-shadow: none; }
+ .bg-lighten-25-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+@media screen and (min-width: 60em) {
+ .bg-darken-0-l { box-shadow: none; }
+ .bg-darken-25-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-l { box-shadow: none; }
+ .bg-lighten-25-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+
+.noselect {
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+</style>
+
+  <style id="__web-inspector-hide-shortcut-style__" type="text/css">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
+{
+    visibility: hidden !important;
+}
+</style></head>
+    <body>
+
+      <!-- Navigation -->
+      <header class="bg-white z-max sans-serif">
+        <nav class="ph6-ns ph3 pv3">
+          <a class="flex flex-justify no-underline" href="index.html" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"></path>
+              <path fill="#00dffc" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"></path>
+              <path fill="#377dff" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"></path>
+              <path fill="#fff" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"></path>
+            </svg>
+            <span class="f2 fw6 ph2 link blue no-underline">Front</span>
+          </a>
+
+          <div class="flex flex-justify f5 fw4 gray pv3">
+            <a class="flex items-center hover-blue">
+              <span class="ph2">Home</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph2">Pages</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph2">Blog</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph2">Shop</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph1">Demos</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+            <button class="br2 white bg-blue ba b--blue ph3 pv2 fr f6 ml2">
+              Buy Now
+            </button>
+        </div></nav>
+      </header>
+
+      <!-- Pricing plans -->
+      <div class="sans-serif ph4">
+        <span class="bg-washed-green green ph3 pv2 br-pill">
+          Pricing plans
+        </span>
+        <div class="f2 db pv4">
+          <div>No additional costs.</div>
+          <div>Pay for what you use.</div>
+        </div>
+
+        <div class="fw1 pb4">
+          Choose the most suitable service for your needs with reasonable price.
+        </div>
+
+        <div class="sans-serif">
+          <button class="bg-blue bw0 white br1 ph4 pv3 b br1">Monthly</button>
+          <div class="dib relative">
+            <button class="gray bw0 ph4 pv3 b br1">
+              Yearly
+            </button>
+            <span class="br-pill bg-green white z-99 ml4 bottom-2 left-2 pv1 absolute f6 w-75 fw1 tc">
+              10% OFF
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing plans -->
+
+      <div class="flex flex-wrap">
+        <!-- Prices -->
+        <div class="ph4 mv4 w-auto-ns w-100">
+          <div class="bg-blue pt3 white">
+            <div class="f3 fw5 pv3 ph4">Individual Plan</div>
+            <div class="ph4">
+              <span class="v-top f6 fw1 mb3">$</span>
+              <span class="f1 b">22</span>
+              <span class="f4 fw3">/month</span>
+            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 300 100" style="enable-background:new 0 0 300 100;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwave1BottomShapeID1">
+                <style type="text/css">
+                    .wave-bottom-1-0{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                    .wave-bottom-1-1{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;fill-opacity:0;}
+                    .wave-bottom-1-2{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                </style>
+                <g>
+                <defs>
+                  <rect id="waveBottom1ID1" width="300" height="100"></rect>
+                </defs>
+                <clipPath id="waveBottom1ID2">
+                <use xlink:href="#waveBottom1ID1" style="overflow:visible;"></use>
+                </clipPath>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M10.9,63.9c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7C293.7,41,315,61.2,315,61.2v54.4H10.9V63.9z"></path>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M-55.7,64.6c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7c48.7-4.1,69.9,16.2,69.9,16.2v54.4H-55.7   V64.6z"></path>
+                <path class="wave-bottom-1-1 fill-white" opacity=".4" d="M23.4,118.3c0,0,48.3-68.9,109.1-68.9c65.9,0,98,67.9,98,67.9v3.7H22.4L23.4,118.3z"></path>
+                <path class="wave-bottom-1-2 fill-white" d="M-54.7,83c0,0,56-45.7,120.3-27.8c81.8,22.7,111.4,6.2,146.6-4.7c53.1-16.4,104,36.9,104,36.9l1.3,36.7l-372-3   L-54.7,83z"></path>
+                </g>
+              </svg>
+          </div>
+          <div style="box-shadow: 2px 2px 8px 0 rgba(0,0,0,.025)" class="bg-white black sans-serif ph4">
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">Community support</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">400+ pages</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">100+ header variations</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">20+ home page optoins</span>
+            </div>
+
+
+            <button class="bg-lightest-blue ph3 pv2 mv4 br1 blue bw0 w-100">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- End Prices -->
+
+        <!-- Prices -->
+        <div class="ph4 mv4 w-auto-ns w-100">
+          <div class="bg-blue pt3 white">
+            <div class="f3 fw5 pv3 ph4">Enterprise Plan</div>
+            <div class="ph4">
+              <span class="v-top f6 fw1 mb3">$</span>
+              <span class="f1 b">99</span>
+              <span class="f4 fw3">/month</span>
+            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 300 100" style="enable-background:new 0 0 300 100;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwave1BottomShapeID1">
+                <style type="text/css">
+                    .wave-bottom-1-0{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                    .wave-bottom-1-1{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;fill-opacity:0;}
+                    .wave-bottom-1-2{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                </style>
+                <g>
+                <defs>
+                  <rect id="waveBottom1ID1" width="300" height="100"></rect>
+                </defs>
+                <clipPath id="waveBottom1ID2">
+                <use xlink:href="#waveBottom1ID1" style="overflow:visible;"></use>
+                </clipPath>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M10.9,63.9c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7C293.7,41,315,61.2,315,61.2v54.4H10.9V63.9z"></path>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M-55.7,64.6c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7c48.7-4.1,69.9,16.2,69.9,16.2v54.4H-55.7   V64.6z"></path>
+                <path class="wave-bottom-1-1 fill-white" opacity=".4" d="M23.4,118.3c0,0,48.3-68.9,109.1-68.9c65.9,0,98,67.9,98,67.9v3.7H22.4L23.4,118.3z"></path>
+                <path class="wave-bottom-1-2 fill-white" d="M-54.7,83c0,0,56-45.7,120.3-27.8c81.8,22.7,111.4,6.2,146.6-4.7c53.1-16.4,104,36.9,104,36.9l1.3,36.7l-372-3   L-54.7,83z"></path>
+                </g>
+              </svg>
+          </div>
+          <div style="box-shadow: 2px 2px 8px 0 rgba(0,0,0,.025)" class="bg-white black sans-serif ph4">
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">24/7 support</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">400+ pages</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">200+ header variations</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">40+ home page options</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">E-commerce</span>
+            </div>
+
+
+            <button class="bg-lightest-blue ph3 pv2 mv4 br1 blue bw0 w-100">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- End Prices -->
+      </div>
+
+      <!-- What we do -->
+      <div class="sans-serif">
+        <div class="mh2 mh5-ns">
+          <div class="ttu f6 gray">What we do?</div>
+          <div class="f2 b">More control and greater overview from simple, powerful features</div>
+          <div class="f4 fw1 pv2">
+            This is where we really begin to visualize your napkin sketches and
+            make them into beautiful pixels.
+          </div>
+        </div>
+      </div>
+      <!-- End What we Do -->
+
+      <!-- Services -->
+<div class="mv4 mh2 mh5-ns">
+        <div class="tc">
+          <div class="ttu f6 b gray">Services</div>
+          <div class="b center f2 w-75-ns w-100 mb4 ph3">We create the best solution for you and your business</div>
+        </div>
+
+        <div class="flex justify-center flex-wrap">
+          <div class="relative mh3 w-100 w-40-ns  shadow-2 tc">
+
+            <div class="ph4 pv5"><div class="f3 fw7 pv3">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" class="db center pv3 w-25" data-parent="#icon24">
+<style type="text/css">
+	.icon-24-0{fill:none;stroke:#BDC5D1;}
+	.icon-24-1{fill:#377DFF;}
+	.icon-24-2{fill:none;stroke:#377DFF;}
+	.icon-24-3{fill:none;stroke:#FFFFFF;}
+	.icon-24-4{fill:#BDC5D1;}
+</style>
+<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="99.8" y1="26.9" x2="106.5" y2="24.1"></line>
+<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="47.1" y1="26.9" x2="40.4" y2="24.1"></line>
+<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="99.8" y1="48.7" x2="106.5" y2="51.5"></line>
+<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="47.1" y1="48.7" x2="40.4" y2="51.5"></line>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="84.4" y1="11.5" x2="87.1" y2="4.8"></line>
+</g>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="59.8" y1="4.8" x2="62.5" y2="11.5"></line>
+</g>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="48.2" y1="12.5" x2="53.3" y2="17.6"></line>
+</g>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="98.7" y1="12.5" x2="93.6" y2="17.6"></line>
+</g>
+<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="48.2" y1="63.1" x2="53.3" y2="58"></line>
+<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="98.7" y1="63.1" x2="93.6" y2="58"></line>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="73.5" y1="2.1" x2="73.5" y2="9.3"></line>
+</g>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="102" y1="37.8" x2="109.2" y2="37.8"></line>
+</g>
+<g>
+	<line class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.7" y1="37.8" x2="45" y2="37.8"></line>
+</g>
+<path class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M84.3,96.7l17.3-4.7c2.1-0.6,4.3,0.6,5,2.7l0,0c0.6,1.9-0.2,4.1-2.1,5L71,116.5c-3.7,1.8-8,2-11.7,0.4  l-18.6-7.9h-9.4"></path>
+<path class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M31.2,82.5h9.4l19.8,6.1h11.6c2.7,0,4.9,2.2,4.9,4.9l0,0c0,2.5-2,4.5-4.5,4.5h-12c-2.6,0-4.7,2.1-4.7,4.7l0,0"></path>
+<path class="icon-24-1 fill-primary" d="M12.2,112.3h17.6c0.8,0,1.4-0.6,1.4-1.4V80.6c0-0.8-0.6-1.4-1.4-1.4H12.2c-0.8,0-1.4,0.6-1.4,1.4v30.3  C10.8,111.6,11.4,112.3,12.2,112.3z"></path>
+<path class="icon-24-0 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M84.1,62.6v-7.8c5.7-3.6,9.5-9.8,9.5-17c0-11.1-9-20.1-20.1-20.1c-11.1,0-20.1,9-20.1,20.1  c0,7.2,3.8,13.5,9.5,17v7.8"></path>
+<line class="icon-24-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="73.5" y1="55.4" x2="73.5" y2="69.7"></line>
+<line class="icon-24-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="84.1" y1="69.7" x2="62.8" y2="69.7"></line>
+<line class="icon-24-2 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="68.4" y1="77.9" x2="78.5" y2="77.9"></line>
+<line class="icon-24-3 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.8" y1="85.7" x2="21.8" y2="88.8"></line>
+<circle class="icon-24-4 fill-gray-400" opacity=".5" cx="76.8" cy="40.8" r="10.6"></circle>
+<circle class="icon-24-1 fill-primary" cx="73.2" cy="36.7" r="10.6"></circle>
+<line class="icon-24-3 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="73.2" y1="41.7" x2="73.2" y2="39.7"></line>
+<line class="icon-24-3 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="73.2" y1="34.1" x2="73.2" y2="34.1"></line>
+</svg>
+                Front in action
+              </div><div class="gray pv4">
+                You can work with your existing website or create new pages on Front.
+              </div><span class="dib tc bg-dark-blue white fw4 ph4 pv3 br3">
+                Get Started
+              </span></div>
+
+
+
+
+          </div>
+        <div class="relative mh3 mv3 mv0-ns w-100 w-40-ns  shadow-2 tc">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 286.6 468.4" style="enable-background:new 0 0 286.6 468.4;" xml:space="preserve" class="w-third mw4 absolute top-0 left-0">
+              <style type="text/css">
+.abstract-shapes-9-0{fill:none;stroke:#377DFF;}
+.abstract-shapes-9-1{fill:#FFC107;}
+.abstract-shapes-9-2{fill:none;stroke:#FFFFFF;}
+.abstract-shapes-9-3{fill:none;stroke:#00DFFC;}
+              </style>
+              <g>
+              <defs>
+              <rect id="abstractShapes9ID1" width="286.6" height="468.4"></rect>
+              </defs>
+              <clipPath id="abstractShapes9ID2">
+              <use xlink:href="#abstractShapes9ID1" style="overflow:visible;"></use>
+              </clipPath>
+              <g clip-path="url(#abstractShapes9ID2)">
+              <g>
+              <path id="bgElements11_2" class="abstract-shapes-9-1 fill-warning" d="M-11.8,37.1C7.4,56.9,26.3,76.2,54.6,83.3C75,88.5,97,86,116,76.9     c25-12,46-38,75.5-38.4c15.7-0.1,30.5,7.1,39.8,19.9c24.1,33.1,3.2,68.3-21.6,93.7c-29,29.7-66.2,55.1-66.1,101.3     c0.1,27.3,16.9,56.7,7.6,84.1c-13.6,40.1-65.8,27.4-94.8,14.9C30.2,341,4.9,329.1-18.9,312.9c-12.4-8.4-24-18.6-30.5-32     c-16.2-32.9,14-55.3,23.1-84.4c4.8-15.6,3.6-31.8-2.7-46.8c-11.4-27.1-32.9-49.1-52-71c-18.5-21.1-26.6-61.3,6.6-73.8     C-59.2-0.9-44,6.4-32.8,16.6C-25.5,22.9-18.6,30.2-11.8,37.1z"></path>
+              </g>
+              <g>
+              <g>
+              <g>
+              <defs>
+              <path id="abstractShapes9ID3" d="M-11.8,37.1C7.4,56.9,26.3,76.2,54.6,83.3C75,88.5,97,86,116,76.9c25-12,46-38,75.5-38.4        c15.7-0.1,30.5,7.1,39.8,19.9c24.1,33.1,3.2,68.3-21.6,93.7c-29,29.7-66.2,55.1-66.1,101.3c0.1,27.3,16.9,56.7,7.6,84.1        c-13.6,40.1-65.8,27.4-94.8,14.9C30.2,341,4.9,329.1-18.9,312.9c-12.4-8.4-24-18.6-30.5-32c-16.2-32.9,14-55.3,23.1-84.4        c4.8-15.6,3.6-31.8-2.7-46.8c-11.4-27.1-32.9-49.1-52-71c-18.5-21.1-26.6-61.3,6.6-73.8C-59.2-0.9-44,6.4-32.8,16.6        C-25.5,22.9-18.6,30.2-11.8,37.1z"></path>
+              </defs>
+              <clipPath id="abstractShapes9ID4">
+              <use xlink:href="#abstractShapes9ID3" style="overflow:visible;"></use>
+              </clipPath>
+              <path class="abstract-shapes-9-2 fill-none stroke-white" clip-path="url(#abstractShapes9ID4)" stroke-width="5.75" stroke-miterlimit="10" d="M-44.9,200c0,0,5.5,49.1,95.3,60.2s108.8,101.2,108.8,101.2"></path>
+              </g>
+              </g>
+              </g>
+              <g>
+              <g>
+              <g>
+              <defs>
+              <path id="abstractShapes9ID5" d="M-11.8,37.1C7.4,56.9,26.3,76.2,54.6,83.3C75,88.5,97,86,116,76.9c25-12,46-38,75.5-38.4        c15.7-0.1,30.5,7.1,39.8,19.9c24.1,33.1,3.2,68.3-21.6,93.7c-29,29.7-66.2,55.1-66.1,101.3c0.1,27.3,16.9,56.7,7.6,84.1        c-13.6,40.1-65.8,27.4-94.8,14.9C30.2,341,4.9,329.1-18.9,312.9c-12.4-8.4-24-18.6-30.5-32c-16.2-32.9,14-55.3,23.1-84.4        c4.8-15.6,3.6-31.8-2.7-46.8c-11.4-27.1-32.9-49.1-52-71c-18.5-21.1-26.6-61.3,6.6-73.8C-59.2-0.9-44,6.4-32.8,16.6        C-25.5,22.9-18.6,30.2-11.8,37.1z"></path>
+              </defs>
+              <clipPath id="abstractShapes9ID6">
+              <use xlink:href="#abstractShapes9ID5" style="overflow:visible;"></use>
+              </clipPath>
+              <path class="abstract-shapes-9-2 fill-none stroke-white" clip-path="url(#abstractShapes9ID6)" stroke-width="5.75" stroke-miterlimit="10" d="M-36.5,158.5c0,0,5.5,49.1,95.3,60.2c89.8,11.1,108.8,101.2,108.8,101.2"></path>
+              </g>
+              </g>
+              </g>
+              <g>
+              <g>
+              <g>
+              <defs>
+              <path id="abstractShapes9ID7" d="M-11.8,37.1C7.4,56.9,26.3,76.2,54.6,83.3C75,88.5,97,86,116,76.9c25-12,46-38,75.5-38.4        c15.7-0.1,30.5,7.1,39.8,19.9c24.1,33.1,3.2,68.3-21.6,93.7c-29,29.7-66.2,55.1-66.1,101.3c0.1,27.3,16.9,56.7,7.6,84.1        c-13.6,40.1-65.8,27.4-94.8,14.9C30.2,341,4.9,329.1-18.9,312.9c-12.4-8.4-24-18.6-30.5-32c-16.2-32.9,14-55.3,23.1-84.4        c4.8-15.6,3.6-31.8-2.7-46.8c-11.4-27.1-32.9-49.1-52-71c-18.5-21.1-26.6-61.3,6.6-73.8C-59.2-0.9-44,6.4-32.8,16.6        C-25.5,22.9-18.6,30.2-11.8,37.1z"></path>
+              </defs>
+              <clipPath id="abstractShapes9ID8">
+              <use xlink:href="#abstractShapes9ID7" style="overflow:visible;"></use>
+              </clipPath>
+              <path class="abstract-shapes-9-2 fill-none stroke-white" clip-path="url(#abstractShapes9ID8)" stroke-width="7" stroke-miterlimit="10" d="M-94.5,64.5c0,0,6.9,59.9,118.5,73.5c111.7,13.6,135.2,123.5,135.2,123.5"></path>
+              </g>
+              </g>
+              </g>
+              <g>
+              <g>
+              <g>
+              <defs>
+              <path id="abstractShapes9ID9" d="M-11.8,37.1C7.4,56.9,26.3,76.2,54.6,83.3C75,88.5,97,86,116,76.9c25-12,46-38,75.5-38.4        c15.7-0.1,30.5,7.1,39.8,19.9c24.1,33.1,3.2,68.3-21.6,93.7c-29,29.7-66.2,55.1-66.1,101.3c0.1,27.3,16.9,56.7,7.6,84.1        c-13.6,40.1-65.8,27.4-94.8,14.9C30.2,341,4.9,329.1-18.9,312.9c-12.4-8.4-24-18.6-30.5-32c-16.2-32.9,14-55.3,23.1-84.4        c4.8-15.6,3.6-31.8-2.7-46.8c-11.4-27.1-32.9-49.1-52-71c-18.5-21.1-26.6-61.3,6.6-73.8C-59.2-0.9-44,6.4-32.8,16.6        C-25.5,22.9-18.6,30.2-11.8,37.1z"></path>
+              </defs>
+              <clipPath id="abstractShapes9ID10">
+              <use xlink:href="#abstractShapes9ID9" style="overflow:visible;"></use>
+              </clipPath>
+              <path class="abstract-shapes-9-2 fill-none stroke-white" clip-path="url(#abstractShapes9ID10)" stroke-width="7" stroke-miterlimit="10" d="M-54.4-2.6c0,0,6.9,59.9,118.5,73.5s135.1,123.5,135.1,123.5"></path>
+              </g>
+              </g>
+              </g>
+              </g>
+              <g clip-path="url(#abstractShapes9ID2)">
+              <line class="abstract-shapes-9-3 fill-none stroke-info" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="207.8" y1="213.9" x2="276.1" y2="137"></line>
+              <line class="abstract-shapes-9-3 fill-none stroke-info" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="207.8" y1="252.9" x2="276.1" y2="175.9"></line>
+              <line class="abstract-shapes-9-3 fill-none stroke-info" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="207.8" y1="291.8" x2="276.1" y2="214.9"></line>
+              </g>
+              <circle class="abstract-shapes-9-0 fill-none stroke-primary" clip-path="url(#abstractShapes9ID2)" stroke-width="3.5" stroke-miterlimit="10" cx="130.6" cy="441.9" r="16.9"></circle>
+              <circle class="abstract-shapes-9-0 fill-none stroke-primary" clip-path="url(#abstractShapes9ID2)" stroke-width="2" stroke-miterlimit="10" cx="141.2" cy="397.6" r="6.4"></circle>
+              </g>
+            </svg>
+            <div class="ph4 pv5"><div class="f3 fw7 pv3">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" class="db center pv3 w-25" data-parent="#icon23">
+                  <style type="text/css">
+.icon-23-0{fill:none;stroke:#377DFF;}
+.icon-23-1{fill:#BDC5D1;}
+.icon-23-2{fill:#377DFF;}
+.icon-23-3{fill:none;stroke:#FFFFFF;}
+.icon-23-4{fill:none;stroke:#BDC5D1;}
+                  </style>
+                  <g>
+                  <g>
+                  <g>
+                  <line class="icon-23-0 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.7" y1="100.8" x2="1.3" y2="106.2"></line>
+                  </g>
+                  <line class="icon-23-0 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="9.4" y1="111.2" x2="7" y2="113.5"></line>
+                  <g>
+                  <circle class="icon-23-1 fill-gray-400" opacity=".5" cx="86.2" cy="41.8" r="17.1"></circle>
+                  <circle class="icon-23-2 fill-primary" cx="84.4" cy="36.2" r="17.1"></circle>
+                  <path class="icon-23-3 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M81.7,25.1c2-0.5,4.1-0.4,6.1,0.2"></path>
+                  <path class="icon-23-3 fill-none stroke-white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M76.3,44.3c-4.5-4.5-4.5-11.7,0-16.2"></path>
+                  </g>
+                  <g>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M42.5,42.2c-9.8-1.6-20.2,1.4-27.8,9c-3,3-5.2,6.4-6.8,10c7-1.3,15.1-1.5,23.8-0.4     C34.5,54.4,38.1,48.1,42.5,42.2z"></path>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M60.4,106.4c-0.1,0.5-0.6,4-0.7,4.4c-0.1,0.6-0.2,1.3-0.3,1.9c3.6-1.6,7.1-3.8,10-6.8     c7.6-7.6,10.6-17.9,9-27.8c-6,4.4-12.2,8-18.6,10.7c0.6,4.7,0.8,9.2,0.7,13.5"></path>
+                  </g>
+                  <g>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M52.1,73.8c4.8,4.4,9.9,8,15.4,11.1"></path>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M35.7,53c3,5.4,6.7,10.6,11.1,15.4"></path>
+                  </g>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M34,86.6L34,86.6c-1.5-1.5-1.5-3.9,0-5.4l20-20c1.5-1.5,3.9-1.5,5.4,0v0c1.5,1.5,1.5,3.9,0,5.4l-20,20    C37.9,88.1,35.5,88.1,34,86.6z"></path>
+                  <g>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M46.7,79.2c4.1,3.7,8.4,6.9,12.9,9.7c10.9-4.7,21.5-11.8,30.9-21.2c19.3-19.3,29-43.9,28.1-65.8     C96.7,1,72.2,10.7,52.8,30c-9.4,9.4-16.4,20-21.2,30.9c2.8,4.5,6,8.9,9.7,12.9"></path>
+                  <path class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M94.8,4.9c2.6,4.3,5.6,8.2,9.2,11.7c3.6,3.6,7.5,6.6,11.7,9.1"></path>
+                  </g>
+                  <path class="icon-23-0 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M55.8,93.9c-3.4-2.1-6.8-4.6-10.1-7.4l-3.3,3.3c-3.1,3.1-8.2,3.1-11.3,0v0c-3.1-3.1-3.1-8.2,0-11.3l3.3-3.3    c-2.9-3.4-5.5-7-7.8-10.6c-2.9,1.6-5.8,3.7-8.4,6.4c-7.5,7.5-11,17-9.6,24.1c1.5,0.3,3.1,0.4,4.8,0.3c-1.4,4.5-1.7,8.8-0.9,12.6    c3.8,0.8,8.2,0.4,12.6-0.9c-0.1,1.7-0.1,3.3,0.3,4.8c7.1,1.5,16.6-2,24.1-9.6C52.1,99.8,54.2,96.9,55.8,93.9z"></path>
+                  <g>
+                  <line class="icon-23-0 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="19.4" y1="55" x2="10.1" y2="64.3"></line>
+                  <line class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.3" y1="65.8" x2="9.4" y2="72.7"></line>
+                  <line class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="5.5" y1="68.9" x2="4" y2="70.4"></line>
+                  <line class="icon-23-0 fill-none stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="65.5" y1="101.2" x2="50.7" y2="116.1"></line>
+                  <line class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="54.8" y1="104.3" x2="47.8" y2="111.2"></line>
+                  <line class="icon-23-4 fill-none stroke-gray-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="43.2" y1="115.8" x2="40.9" y2="118.2"></line>
+                  </g>
+                  </g>
+                  </g>
+                </svg>
+                Front in action
+              </div><div class="gray pv4">
+                You can work with your existing website or create new pages on Front.
+              </div><span class="dib tc bg-dark-blue white fw4 ph4 pv3 br3">
+                Get Started
+              </span></div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 283.8 477.3" style="enable-background:new 0 0 283.8 477.3;" xml:space="preserve" class="absolute w-25-m mw3 right-0 bottom-0">
+<style type="text/css">
+	.abstract-shapes-6-0{fill:#00DFFC;}
+	.abstract-shapes-6-1{fill:#FFC107;}
+	.abstract-shapes-6-2{fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<rect id="abstractShapes6ID_1" width="283.8" height="477.3"></rect>
+	</defs>
+	<clipPath id="abstractShapes6ID_2">
+		<use xlink:href="#abstractShapes6ID_1" style="overflow:visible;"></use>
+	</clipPath>
+	<path class="abstract-shapes-6-0 fill-info" clip-path="url(#abstractShapes6ID_2)" d="M339,154c10.2,28.6,23.3,71.2,11.2,99.4c-9.3,21.9-26.6,53.8-48.5,49.5c-18.4-23.7-55.8-73.2-79.9-92.5   c-19.9-16-50.5-32.5-69.8-49.9C104,117.2,85.5,58.6,58.9,0c48.5,4.9,96.5,14,144,27.2c30.6,8.7,62.1,19.9,85.3,41.2   C313.8,90.4,328.4,122,339,154z"></path>
+	<g clip-path="url(#abstractShapes6ID_2)">
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M61.8,2.5c56.5,26.9,108.5,62,153,105.3c48.2,47.7,80.6,103.6,116.8,159.6c0.6,1.7,3.8,0,2.2-1.7     C271.9,150,184.7,52.4,61.8,0.8C61.8,1,60.7,1.5,61.8,2.5L61.8,2.5z"></path>
+		</g>
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M94.6,76.1c39-2.2,72.9-0.6,107,20.9c2.2,1.7,4.3-2.2,2.2-3.8c-30.1-19.8-74-31.8-109.6-19.8     C93.1,74.5,93.1,76.1,94.6,76.1L94.6,76.1z"></path>
+		</g>
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M155.5,140.8c18.6,0,36.7-0.6,54.8,3.8c16.4,3.8,32.4,9.8,48.8,15.8c2.2,0.6,2.8-2.2,0.6-3.8     c-33-12.1-70.2-26.4-105.3-17.5C155.1,140.2,155.1,140.8,155.5,140.8L155.5,140.8z"></path>
+		</g>
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M228,198.4c12.6,0.6,26.4,2.2,39,4.3c14.9,2.8,24.7,10.4,34.5,21.9c1.7,1.7,4.3-0.6,2.8-2.8     c-8.8-10.4-18.1-18.1-32.4-21.9c-14.3-2.8-29.6-3.8-44.4-2.8C227.4,196.7,227.4,198.4,228,198.4L228,198.4z"></path>
+		</g>
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M174.7,31.1c0.6,14.3,8.3,28.5,13.7,41.6c3.8,8.3,6.6,22.4,17.5,24.1c0.6,0,1.7-0.6,0.6-1.7     c-18.1-14.9-18.6-44.4-30.7-64.2C175.8,30,174.7,30,174.7,31.1L174.7,31.1z"></path>
+		</g>
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M233.5,48.1c3.8,39,15.8,77.3,29.6,113.6c0.6,1.7,3.8,0.6,2.8-0.6c-14.3-36.7-21.9-74.6-30.7-113     C234.6,47.5,233.5,47.5,233.5,48.1L233.5,48.1z"></path>
+		</g>
+		<g>
+			<path class="abstract-shapes-6-2 fill-white" d="M296.5,130.4c0,33,8.3,66.9,13.7,99.3c0.6,2.2,4.3,1.7,3.8-0.6c-6-33-10.4-65.2-15.8-98.7     C298.1,128.7,296.5,128.7,296.5,130.4L296.5,130.4z"></path>
+		</g>
+	</g>
+	<path class="abstract-shapes-6-1 fill-warning" clip-path="url(#abstractShapes6ID_2)" d="M507,530.6c-46.8-6.2-93-12.6-131.8-44.3c-28-22.9-47.4-55.8-54.1-91.3c-9-46.7,5.3-102.4-24.3-143.4   c-15.8-22-40.9-34.8-68.1-34.5c-70.4,0.7-97.3,65.6-107,125.6c-11.2,70.5-8.3,147.8-72.2,194.8C11.8,565.2-46,572.4-74.3,613.2   c-41.4,59.9,29.6,118.8,76.7,146c42.6,24.7,85.1,47,131.7,63.4c24.3,8.6,50.3,13.9,75.6,9.4c62.1-11.4,61.8-75.9,93-118.2   c16.5-22.6,40.2-37.4,67.3-44c49.4-12.1,101.5-4.8,151.3-1c47.7,3.6,111.3-26.6,94.6-85c-7.7-26.8-33.1-40.2-58.8-45.4   C540.5,535.1,523.7,532.8,507,530.6z"></path>
+
+		<linearGradient id="abstractShapes6ID_3" gradientUnits="userSpaceOnUse" x1="769.8295" y1="-577.4395" x2="1341.0831" y2="-577.4395" gradientTransform="matrix(-0.7976 0.6032 -0.6032 -0.7976 804.3157 -580.5603)">
+		<stop class="stop-color-primary" offset="2.474398e-07" style="stop-color:#377DFF"></stop>
+		<stop class="stop-color-indigo" offset="1" style="stop-color:#2D1582"></stop>
+	</linearGradient>
+	<path fill="url(#abstractShapes6ID_3)" clip-path="url(#abstractShapes6ID_2)" d="M309.6,250.3c84.8-62.5,205.8-0.4,201.8,105c0,1.4-0.1,2.8-0.1,4.1c-8,133.2,179.9,156.2,72.8,219.6   s7.2,108-100.4,150.6c-107.7,42.6-168.7,130.7-300.2-17C63.7,578.1-26.8,631.4-3.9,516.8c4.2-21.3,6.9-43,6.9-64.8   c0.1-36,17.9-99.8,134-124.9C212.8,310.9,269.9,279.4,309.6,250.3z"></path>
+</g>
+</svg>
+
+          </div></div>
+      </div>
+      <!-- End Services -->
+
+      <!-- Get Started -->
+      <div class="relative">
+<svg class="absolute w-25 mw5 mw5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.1 283.3" style="enable-background:new 0 0 384.1 283.3;" xml:space="preserve" data-parent="#SVGctaSection">
+<style type="text/css">
+	.abstract-shapes-8-0{fill:#00DFFC;}
+	.abstract-shapes-8-1{fill:#FFC107;}
+	.abstract-shapes-8-2{fill:none;stroke:#00DFFC;}
+</style>
+<g>
+	<defs>
+		<rect id="abstractShapesID8_1" width="384.1" height="283.3"></rect>
+	</defs>
+	<clipPath id="abstractShapesID8_2">
+		<use xlink:href="#abstractShapesID8_1" style="overflow:visible;"></use>
+	</clipPath>
+	<path class="abstract-shapes-8-0 fill-info" clip-path="url(#abstractShapesID8_2)" d="M-160.5-53c29.5-3.9,58.5-7.9,82.9-27.9c17.7-14.4,29.8-35.1,34.1-57.5c5.6-29.4-3.4-64.4,15.2-90.2   c10-13.8,25.8-21.8,42.9-21.7c44.3,0.4,61.3,41.3,67.3,79.1c7.1,44.4,5.2,93,45.4,122.6c23.8,17.5,60.1,21.9,77.9,47.6   c26.1,37.6-18.6,74.7-48.2,91.9c-26.8,15.5-53.5,29.6-82.8,39.9c-15.2,5.4-31.6,8.8-47.5,5.9c-39-7.1-38.9-47.7-58.5-74.4   c-10.4-14.2-25.3-23.6-42.4-27.7c-31-7.6-63.8-3-95.2-0.6c-30,2.3-70.1-16.7-59.5-53.5c4.8-16.8,20.8-25.3,36.9-28.6   C-181.6-50.2-171-51.6-160.5-53z"></path>
+	<path class="abstract-shapes-8-1 fill-warning" clip-path="url(#abstractShapesID8_2)" d="M369.1,21.5c-14.7-73.5-31.3-154.9-83.3-212.2c-65.3-72-161.9-133.7-254.4-163.2c-47-15-86,2.5-110.9,44.3   c-16,27-22.7,58.9-40.6,84.6c-15.9,22.8-39.2,42.2-46.9,69.9c-8.5,30.5,9.6,62.6,30.7,83.4c17.8,17.6,39.5,29.4,64.9,30.3   c8.4,0.3,17.5-0.9,27-2.6c42-7.5,90.3-24.9,102.6,33.2c5,23.8-6.2,42.3-17.3,62.5c-13.7,24.7-22.3,55.9-14.8,83.9   c7.5,28.2,36.2,56.4,66.7,40.8c35.1-18,43.6-64.2,82.1-79.3c24.1-9.4,45.7,1.1,63,18.9c11,11.4,19.3,25.2,26.5,39.4   c16.5,32.6,49.9,60.7,86.9,35.6C404.6,155,379.3,72.1,369.1,21.5z"></path>
+	<circle class="abstract-shapes-8-2 fill-none stroke-info" stroke-width="3" stroke-miterlimit="10" clip-path="url(#abstractShapesID8_2)" cx="193.8" cy="257.8" r="14.4"></circle>
+	<circle class="abstract-shapes-8-2 fill-none stroke-info" stroke-width="2" stroke-miterlimit="10" clip-path="url(#abstractShapesID8_2)" cx="202.8" cy="220" r="5.4"></circle>
+</g>
+</svg>
+        <div class="tc ph5 pv5" style="background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%)">
+          <div class="b w-100 f2 fw6 pv3 light-blue">Ready to get started?</div>
+          <div class="w-100 pv3 f3 white">
+            <span class="b">lexicoi</span>
+            <span class="fw1"> - the simplest and fastest way to improve</span>
+          </div>
+          <div class="w-100 pv2">
+            <button class=" bw0 br3 dib bg-white black grow ph4 pv3 b f4 fw5">
+              See our products
+            </button>
+          </div>
+        </div>
+        <svg class="absolute w-25 mw5 bottom-0 right-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 385.3 279.2" style="enable-background:new 0 0 385.3 279.2;" xml:space="preserve" data-parent="#SVGctaSection">
+          <style type="text/css">
+  .abstract-shapes-5-0{fill:#00DFFC;}
+  .abstract-shapes-5-2{fill:#FFFFFF;}
+  .abstract-shapes-5-3{fill:#FFC107;}
+  .abstract-shapes-5-4{fill:none;stroke:#00DFFC;}
+          </style>
+          <g>
+          <defs>
+          <rect id="abstractShapesID5_1" width="385.3" height="279.2"></rect>
+          </defs>
+          <clipPath id="abstractShapesID5_2">
+          <use xlink:href="#abstractShapesID5_1" style="overflow:visible;"></use>
+          </clipPath>
+          <path class="abstract-shapes-5-0 fill-info" clip-path="url(#abstractShapesID5_2)" d="M247.1,109.8c7.3,20.4,16.6,50.8,8,70.9c-6.6,15.6-19,38.4-34.6,35.3c-13.1-16.9-39.8-52.2-57-66   c-14.2-11.4-36-23.2-49.8-35.6C79.5,83.6,66.3,41.8,47.3,0C81.9,3.5,116.1,10,150,19.4c21.8,6.2,44.3,14.2,60.8,29.4   C229.1,64.5,239.5,87,247.1,109.8z"></path>
+          <g clip-path="url(#abstractShapesID5_2)">
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M49.4,1.8C89.7,21,126.8,46,158.5,76.9c34.4,34,57.5,73.9,83.3,113.8c0.4,1.2,2.7,0,1.6-1.2     C199.2,107,137,37.4,49.4,0.6C49.4,0.7,48.6,1.1,49.4,1.8L49.4,1.8z"></path>
+          </g>
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M72.8,54.3c27.8-1.6,52-0.4,76.3,14.9c1.6,1.2,3.1-1.6,1.6-2.7c-21.5-14.1-52.8-22.7-78.2-14.1     C71.7,53.1,71.7,54.3,72.8,54.3L72.8,54.3z"></path>
+          </g>
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M116.2,100.4c13.3,0,26.2-0.4,39.1,2.7c11.7,2.7,23.1,7,34.8,11.3c1.6,0.4,2-1.6,0.4-2.7     c-23.5-8.6-50.1-18.8-75.1-12.5C115.9,100,115.9,100.4,116.2,100.4L116.2,100.4z"></path>
+          </g>
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M167.9,141.5c9,0.4,18.8,1.6,27.8,3.1c10.6,2,17.6,7.4,24.6,15.6c1.2,1.2,3.1-0.4,2-2     c-6.3-7.4-12.9-12.9-23.1-15.6c-10.2-2-21.1-2.7-31.7-2C167.5,140.3,167.5,141.5,167.9,141.5L167.9,141.5z"></path>
+          </g>
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M129.9,22.2c0.4,10.2,5.9,20.3,9.8,29.7c2.7,5.9,4.7,16,12.5,17.2c0.4,0,1.2-0.4,0.4-1.2     c-12.9-10.6-13.3-31.7-21.9-45.8C130.7,21.4,129.9,21.4,129.9,22.2L129.9,22.2z"></path>
+          </g>
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M171.8,34.3c2.7,27.8,11.3,55.1,21.1,81c0.4,1.2,2.7,0.4,2-0.4c-10.2-26.2-15.6-53.2-21.9-80.6     C172.6,33.9,171.8,33.9,171.8,34.3L171.8,34.3z"></path>
+          </g>
+          <g>
+          <path class="abstract-shapes-5-2 fill-white" d="M216.8,93c0,23.5,5.9,47.7,9.8,70.8c0.4,1.6,3.1,1.2,2.7-0.4c-4.3-23.5-7.4-46.5-11.3-70.4     C217.9,91.8,216.8,91.8,216.8,93L216.8,93z"></path>
+          </g>
+          </g>
+          <path class="abstract-shapes-5-3 fill-warning" clip-path="url(#abstractShapesID5_2)" d="M366.9,378.4c-33.4-4.4-66.3-9-94-31.6c-20-16.3-33.8-39.8-38.6-65.1c-6.4-33.3,3.8-73-17.3-102.3   c-11.3-15.7-29.2-24.8-48.6-24.6c-50.2,0.5-69.4,46.8-76.3,89.6c-8,50.3-5.9,105.4-51.5,138.9c-26.9,19.8-68.1,24.9-88.3,54   C-77.2,480-26.6,522,7,541.4c30.4,17.6,60.7,33.5,93.9,45.2c17.3,6.1,35.9,9.9,53.9,6.7c44.3-8.1,44.1-54.1,66.3-84.3   c11.8-16.1,28.7-26.7,48-31.4c35.2-8.6,72.4-3.4,107.9-0.7c34,2.6,79.4-19,67.5-60.6c-5.5-19.1-23.6-28.7-41.9-32.4   C390.8,381.6,378.8,380,366.9,378.4z"></path>
+
+          <linearGradient id="abstractShapesID5_3" gradientUnits="userSpaceOnUse" x1="1924.1892" y1="147.9113" x2="2331.603" y2="147.9113" gradientTransform="matrix(-0.7976 0.6032 -0.6032 -0.7976 2013.4222 -797.0972)">
+          <stop class="stop-color-primary" offset="2.474398e-07" style="stop-color:#377DFF"></stop>
+          <stop class="stop-color-indigo" offset="1" style="stop-color:#2D1582"></stop>
+          </linearGradient>
+          <path class="abstract-shapes-5-4 fill-none stroke-info" fill="url(#abstractShapesID5_3)" clip-path="url(#abstractShapesID5_2)" d="M226.1,178.5c60.5-44.6,146.8-0.3,143.9,74.9c0,1-0.1,2-0.1,2.9c-5.7,95,128.3,111.4,51.9,156.6   s5.1,77-71.6,107.4c-76.8,30.4-120.3,93.2-214.1-12.1C50.7,412.3-13.8,450.3,2.5,368.6c3-15.2,4.9-30.7,4.9-46.2   c0.1-25.7,12.8-71.2,95.6-89.1C157.1,221.7,197.8,199.3,226.1,178.5z"></path>
+
+          <linearGradient id="abstractShapesID5_4" gradientUnits="userSpaceOnUse" x1="1924.1892" y1="147.9113" x2="2331.603" y2="147.9113" gradientTransform="matrix(-0.7976 0.6032 -0.6032 -0.7976 2013.4222 -797.0972)">
+          <stop class="stop-color-primary" offset="2.474398e-07" style="stop-color:#377DFF"></stop>
+          <stop class="stop-color-indigo" offset="1" style="stop-color:#2D1582"></stop>
+          </linearGradient>
+          <path fill="url(#abstractShapesID5_4)" clip-path="url(#abstractShapesID5_2)" d="M226.1,178.5c60.5-44.6,146.8-0.3,143.9,74.9c0,1-0.1,2-0.1,2.9c-5.7,95,128.3,111.4,51.9,156.6   s5.1,77-71.6,107.4c-76.8,30.4-120.3,93.2-214.1-12.1C50.7,412.3-13.8,450.3,2.5,368.6c3-15.2,4.9-30.7,4.9-46.2   c0.1-25.7,12.8-71.2,95.6-89.1C157.1,221.7,197.8,199.3,226.1,178.5z"></path>
+          <path class="abstract-shapes-5-4 fill-none stroke-info" stroke-width="3" stroke-miterlimit="10" clip-path="url(#abstractShapesID5_2)" d="M340,48.2c-0.1-1.9-1-3.6-2.5-4.7c-2.3-1.7-6.1-2.2-11.4,5.5c-8.4,12.2-0.5,11.7,0.6,11.6c0.1,0,0.2,0,0.3,0   l7.3-0.5c3.5-0.2,6.2-3.3,6-6.8L340,48.2z"></path>
+          </g>
+        </svg>
+      </div>
+      <!-- End Get Started -->
+
+      <div class="style=max-width: 720px">
+        <!-- Link Lists -->
+        <div class="flex flex-wrap justify-center sans-serif ph4 ph6-ns pt5">
+          <div class="ph3-ns w-100 w-25-ns">
+            <!-- List Group -->
+            <h4 class="">About</h4>
+            <a class="db gray no-underline pv1" href="../pages/about-agency.html">About</a>
+            <a class="db gray no-underline pv1" href="../pages/services-agency.html">Services</a>
+            <a class="db gray no-underline pv1" href="../pages/careers.html">Careers</a>
+            <!-- End List Group -->
+          </div>
+
+          <div class="ph3-ns w-100 w-25-ns">
+            <!-- List Group -->
+            <h4 class="">Company</h4>
+            <a class="db gray no-underline pv1" href="">About</a>
+            <a class="db gray no-underline pv1" href="">Products</a>
+            <a class="db gray no-underline pv1" href="">Donate</a>
+            <!-- End List Group -->
+          </div>
+
+          <div class="ph3-ns w-100  w-25-ns">
+            <!-- List Group -->
+            <h4 class="">Community</h4>
+            <a class="db gray no-underline pv1" href="">Forum</a>
+            <a class="db gray no-underline pv1" href="">Facebook</a>
+            <a class="db gray no-underline pv1" href="">Twitter</a>
+            <!-- End List Group -->
+          </div>
+
+          <div class="flex flex-wrap mt3 w-100 w-25-ns">
+            <div class="f3 b">contact us</div>
+
+            <div class="w-100">
+              <div>
+                <span class="b">call us: </span>
+                <span>972-277-1455</span>
+              </div>
+              <div>
+                <span class="b">email us: </span>
+                <span>hello@lexicoi.org</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- End Link Lists -->
+
+        <div class="bw1 bb b--light-gray pv4"></div>
+
+        <!-- Copyright -->
+        <div class="tc sans-serif pt4 pb5">
+          <!-- Logo -->
+          <a class="mb2 flex items-center justify-center no-underline" href="#" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"></path>
+              <path fill="#00dffc" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"></path>
+              <path fill="#377dff" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"></path>
+              <path fill="#fff" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"></path>
+            </svg>
+            <span class="f2 fw5 ph2 link blue no-underline">Front</span>
+          </a>
+          <!-- End Logo -->
+          <div class="f6 pt2 gray">Front. 2019 Htmlstream. All rights reserved.</div>
+        </div>
+        <!-- End Copyright -->
+
+
+
+
+</body></html>

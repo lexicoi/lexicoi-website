@@ -1,0 +1,8 @@
+{% extends "./layouts/base.njk" %}
+
+{% block body %}
+  <article class="helvetica pa3 pa5-ns ph7-l">
+    <h1 class="f3 f1-m f-headline-l">{{ postTitle | safe }}</h1>
+    {{ marked()(contents) | safe }}
+  </article>
+{% endblock %}

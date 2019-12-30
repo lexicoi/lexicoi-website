@@ -1,0 +1,36 @@
+{% extends "./layouts/base.njk" %}
+{% from "./macros/slide.njk" import jsSlide %}
+
+{% block body %}
+  <main class="flex flex-wrap">
+    <header class="bg-light-blue sans-serif w-100">
+      <div class="w-100 center pa4 pt5-ns ph7-l">
+        <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+          <span class="bg-black lh-copy white pa1 tracked-tight">
+            better.
+          </span>
+        </h3>
+
+        <h4 class="f3 fw1">
+          We make tools to make education easier. It's that simple.
+        </h4><h4>
+        </h4></div>
+    </header>
+
+    <div class="pa4 pt5-ns ph7-l flex flex-wrap">
+      <div class="w-50 helvetica">
+        <div class="f2 mb2"><span class="bb bw3 b--light-blue">prioritize</span> your life</div>
+        <div class="f4">
+          With rankables, you can finally start perfectly prioritizing
+          what you need to do, and focusing on what's on important, instead
+          of what you should be doing.
+        </div>
+        <button type="button" class="bn bg-black white pa1 mv2">learn more</button>
+      </div>
+
+      <div class="w-50">
+
+      </div>
+    </div>
+  </main>
+{% endblock %}

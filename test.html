@@ -1,0 +1,453 @@
+
+<html>
+  <head>
+    <!-- Title -->
+    <title>Home Page | Front - Responsive Website Template</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<style>
+/* Variables */
+/* Media queries */
+/*
+
+  TACHYONS BACKGROUND OVERLAYS
+
+  Add an overlay to background images.
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+*/
+.bg-darken-0 { box-shadow: none; }
+.bg-darken-25 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+.bg-darken-50 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+.bg-darken-75 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+.bg-lighten-0 { box-shadow: none; }
+.bg-lighten-25 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+.bg-lighten-50 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+.bg-lighten-75 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+@media screen and (min-width: 30em) {
+ .bg-darken-0-ns { box-shadow: none; }
+ .bg-darken-25-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-ns { box-shadow: none; }
+ .bg-lighten-25-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+ .bg-darken-0-m { box-shadow: none; }
+ .bg-darken-25-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-m { box-shadow: none; }
+ .bg-lighten-25-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+@media screen and (min-width: 60em) {
+ .bg-darken-0-l { box-shadow: none; }
+ .bg-darken-25-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-l { box-shadow: none; }
+ .bg-lighten-25-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+
+.noselect {
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+</style>
+
+  </head>
+    <body>
+
+      <!-- Navigation -->
+      <header class="bg-white z-max sans-serif">
+        <nav class="ph6-ns ph3 pv3">
+          <a class="flex flex-justify no-underline" href="index.html" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"></path>
+              <path fill="#00dffc"  opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"></path>
+              <path fill="#377dff" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"></path>
+              <path fill="#fff"  d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"></path>
+            </svg>
+            <span class="f2 fw6 ph2 link blue no-underline">Front</span>
+          </a>
+
+          <div class="flex flex-justify f5 fw4 gray pv3">
+            <a class="flex items-center hover-blue">
+              <span class="ph2">Home</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph2">Pages</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph2">Blog</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph2">Shop</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+
+            <a class="flex items-center ph2-ns hover-blue">
+              <span class="ph1">Demos</span>
+              <span class="pb2 noselect">⌄</span>
+            </a>
+            <button class="br2 white bg-blue ba b--blue ph3 pv2 fr f6 ml2">
+              Buy Now
+            </button>
+        </nav>
+      </header>
+
+      <!-- Pricing plans -->
+      <div class="sans-serif ph4">
+        <span class="bg-washed-green green ph3 pv2 br-pill">
+          Pricing plans
+        </span>
+        <div class="f2 db pv4">
+          <div>No additional costs.</div>
+          <div>Pay for what you use.</div>
+        </div>
+
+        <div class="fw1 pb4">
+          Choose the most suitable service for your needs with reasonable price.
+        </div>
+
+        <div class="sans-serif">
+          <button class="bg-blue bw0 white br1 ph4 pv3 b br1">Monthly</button>
+          <div class="dib relative">
+            <button class="gray bw0 ph4 pv3 b br1">
+              Yearly
+            </button>
+            <span class="br-pill bg-green white z-99 ml4 bottom-2 left-2 pv1 absolute f6 w-75 fw1 tc">
+              10% OFF
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing plans -->
+
+      <div class="flex flex-wrap">
+        <!-- Prices -->
+        <div class="ph4 mv4 w-auto-ns w-100">
+          <div class="bg-blue pt3 white">
+            <div class="f3 fw5 pv3 ph4">Individual Plan</div>
+            <div class="ph4">
+              <span class="v-top f6 fw1 mb3">$</span>
+              <span class="f1 b">22</span>
+              <span class="f4 fw3">/month</span>
+            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 300 100" style="enable-background:new 0 0 300 100;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwave1BottomShapeID1">
+                <style type="text/css">
+                    .wave-bottom-1-0{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                    .wave-bottom-1-1{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;fill-opacity:0;}
+                    .wave-bottom-1-2{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                </style>
+                <g>
+                <defs>
+                  <rect id="waveBottom1ID1" width="300" height="100"></rect>
+                </defs>
+                <clipPath id="waveBottom1ID2">
+                <use xlink:href="#waveBottom1ID1" style="overflow:visible;"></use>
+                </clipPath>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M10.9,63.9c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7C293.7,41,315,61.2,315,61.2v54.4H10.9V63.9z"></path>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M-55.7,64.6c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7c48.7-4.1,69.9,16.2,69.9,16.2v54.4H-55.7   V64.6z"></path>
+                <path class="wave-bottom-1-1 fill-white" opacity=".4" d="M23.4,118.3c0,0,48.3-68.9,109.1-68.9c65.9,0,98,67.9,98,67.9v3.7H22.4L23.4,118.3z"></path>
+                <path class="wave-bottom-1-2 fill-white" d="M-54.7,83c0,0,56-45.7,120.3-27.8c81.8,22.7,111.4,6.2,146.6-4.7c53.1-16.4,104,36.9,104,36.9l1.3,36.7l-372-3   L-54.7,83z"></path>
+                </g>
+              </svg>
+          </div>
+          <div
+            style="box-shadow: 2px 2px 8px 0 rgba(0,0,0,.025)"
+            class="bg-white black sans-serif ph4">
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">Community support</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">400+ pages</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">100+ header variations</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">20+ home page optoins</span>
+            </div>
+
+
+            <button class="bg-lightest-blue ph3 pv2 mv4 br1 blue bw0 w-100">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- End Prices -->
+
+        <!-- Prices -->
+        <div class="ph4 mv4 w-auto-ns w-100">
+          <div class="bg-blue pt3 white">
+            <div class="f3 fw5 pv3 ph4">Enterprise Plan</div>
+            <div class="ph4">
+              <span class="v-top f6 fw1 mb3">$</span>
+              <span class="f1 b">99</span>
+              <span class="f4 fw3">/month</span>
+            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 300 100" style="enable-background:new 0 0 300 100;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwave1BottomShapeID1">
+                <style type="text/css">
+                    .wave-bottom-1-0{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                    .wave-bottom-1-1{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;fill-opacity:0;}
+                    .wave-bottom-1-2{clip-path:url(#waveBottom1ID2);fill:#FFFFFF;}
+                </style>
+                <g>
+                <defs>
+                  <rect id="waveBottom1ID1" width="300" height="100"></rect>
+                </defs>
+                <clipPath id="waveBottom1ID2">
+                <use xlink:href="#waveBottom1ID1" style="overflow:visible;"></use>
+                </clipPath>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M10.9,63.9c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7C293.7,41,315,61.2,315,61.2v54.4H10.9V63.9z"></path>
+                <path class="wave-bottom-1-0 fill-white" opacity=".4" d="M-55.7,64.6c0,0,42.9-34.5,87.5-14.2c77.3,35.1,113.3-2,146.6-4.7c48.7-4.1,69.9,16.2,69.9,16.2v54.4H-55.7   V64.6z"></path>
+                <path class="wave-bottom-1-1 fill-white" opacity=".4" d="M23.4,118.3c0,0,48.3-68.9,109.1-68.9c65.9,0,98,67.9,98,67.9v3.7H22.4L23.4,118.3z"></path>
+                <path class="wave-bottom-1-2 fill-white" d="M-54.7,83c0,0,56-45.7,120.3-27.8c81.8,22.7,111.4,6.2,146.6-4.7c53.1-16.4,104,36.9,104,36.9l1.3,36.7l-372-3   L-54.7,83z"></path>
+                </g>
+              </svg>
+          </div>
+          <div
+            style="box-shadow: 2px 2px 8px 0 rgba(0,0,0,.025)"
+            class="bg-white black sans-serif ph4">
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">24/7 support</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">400+ pages</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">200+ header variations</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">40+ home page options</span>
+            </div>
+
+            <div class="pv2">
+              <span class="br-100 b w1 h1 ph2 pv1 f4 bg-lightest-blue blue">✔</span>
+              <span class="ph2">E-commerce</span>
+            </div>
+
+
+            <button class="bg-lightest-blue ph3 pv2 mv4 br1 blue bw0 w-100">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- End Prices -->
+      </div>
+
+      <!-- Carousel -->
+      <div class="sans-serif mv2" style="background-repeat: repeat-x; background-image: linear-gradient(0deg, rgba(55, 125, 255, 0.05) 0%, transparent
+      100%)">
+
+        <div class="flex flex-wrap  justify-center pv6">
+          <div class="mv4 tc">
+            <span class="w-auto br-pill bg-washed-green green ph3 pv2">
+              News & Blog
+            </span>
+            <div class="f2 pv4">
+              Read our latest news
+            </div>
+            <div class="dib w-75">
+              Our duty towards you is to share our experience we're
+              reaching in our work path with you.
+            </div>
+          </div>
+
+          <!-- Carousel item full-text -->
+          <div
+           style="background-image: url(https://htmlstream.com/preview/front-v2.5.0/assets/img/400x500/img1.jpg)"
+           class="flex flex-wrap justify-center w-100 w-40-m w-30-l mv3 bg-white br3 ph4 pv3 ma4
+            mh2-ns grow shadow-5 bg-darken-25">
+            <div class="w-100 f2-ns f4 fw4 ph4 pv3 white tc">
+              How to make trust your competitive advantage
+            </div>
+
+            <div class="w-100 tc mv2">
+              <div class="b f5 light-gray">
+                Keith Maragaret
+              </div>
+
+              <img class="br-100 h2 w2 mv2" src="https://htmlstream.com/preview/front-v2.5.0/assets/img/100x100/img3.jpg"/>
+            </div>
+          </div>
+          <!-- End carousel item -->
+
+          <!-- Carousel item full-text -->
+          <div
+          class="flex flex-wrap justify-center w-100 w-40-m w-30-l mv3 bg-white br3 ph4 pv3 ma4
+            mh2-ns grow shadow-5">
+            <div class="w-100 f5 fw1 ph4 pv3">
+               "How to help your team excel at remote collaboration. Here are tips and tools we use on the content team at InVision to keep our remote collaboration game strong. Trust is both a complex and nuanced topic. Its very nature makes it difficult to tackle through direct effort. "
+            </div>
+
+            <div class="w-100 tc mv2">
+              <div class="b f5">
+                Keith Maragaret
+              </div>
+
+              <img class="br-100 h2 w2 mv2" src="https://htmlstream.com/preview/front-v2.5.0/assets/img/100x100/img2.jpg"/>
+            </div>
+
+            <div class="mv1">
+              <button class="bg-lightest-blue blue ph3 pv2 br2 f6 ba b--lightest-blue pointer grow">
+                Read More
+              </button>
+            </div>
+          </div>
+          <!-- End carousel item -->
+
+          <!-- Carousel item full-text -->
+          <div class="flex flex-wrap justify-center w-100 w-40-m w-30-l  mv3 bg-white br3 ph4 pv3
+          ma4 mh2-ns grow shadow-5">
+            <div class="w-100 f5 fw1 ph4 pv3">
+               "How to help your team excel at remote collaboration. Here are tips and tools we use on the content team at InVision to keep our remote collaboration game strong. Trust is both a complex and nuanced topic. Its very nature makes it difficult to tackle through direct effort. "
+            </div>
+
+            <div class="w-100 tc mv2">
+              <div class="b f5">
+                Keith Maragaret
+              </div>
+
+
+              <img class="br-100 h2 w2 mv2" src="https://htmlstream.com/preview/front-v2.5.0/assets/img/100x100/img2.jpg"/>
+            </div>
+
+            <div class="mv1">
+              <button class="bg-lightest-blue blue ph3 pv2 br2 f6 ba b--lightest-blue pointer grow">
+                Read More
+              </button>
+            </div>
+          </div>
+          <!-- End carousel item -->
+        </div>
+      </div>
+      <!-- End Carousel -->
+
+      <div class="style=max-width: 720px">
+        <!-- Link Lists -->
+        <div class="flex flex-wrap justify-center sans-serif ph6 pt5">
+          <div class="ph3-ns w-100 w-25-ns">
+            <!-- List Group -->
+            <h4 class="">About</h4>
+            <a class="db gray no-underline pv1" href="../pages/about-agency.html">About</a>
+            <a class="db gray no-underline pv1" href="../pages/services-agency.html">Services</a>
+            <a class="db gray no-underline pv1" href="../pages/careers.html">Careers</a>
+            <!-- End List Group -->
+          </div>
+
+          <div class="ph3-ns w-100 w-25-ns">
+            <!-- List Group -->
+            <h4 class="">Account</h4>
+            <a class="db gray no-underline pv1" href="../pages/about-agency.html">Account</a>
+            <a class="db gray no-underline pv1" href="../pages/services-agency.html">My Tasks</a>
+            <a class="db gray no-underline pv1" href="../pages/careers.html">Projects</a>
+            <!-- End List Group -->
+          </div>
+
+          <div class="ph3-ns w-100  w-25-ns">
+            <!-- List Group -->
+            <h4 class="">Resources</h4>
+            <a class="db gray no-underline pv1" href="../pages/about-agency.html">Help</a>
+            <a class="db gray no-underline pv1" href="../pages/services-agency.html">Terms</a>
+            <a class="db gray no-underline pv1" href="../pages/careers.html">Privacy</a>
+            <!-- End List Group -->
+          </div>
+
+          <div class="flex flex-wrap w-25">
+            <h4 class="">We are driven to deliver results for all your businesses.</h4>
+
+            <div class="">
+              <!-- Button -->
+              <button type="button" class="bg-black white bw0 br2 ph3 pv2 mh2 mv2">
+                <div class="flex items-center">
+                  <div class="h2 w2 mr2">
+                    <svg style="filter: invert(100%)" width="100%" height="100%" viewBox="0 0 1700 1700" xmlns="http://www.w3.org/2000/svg"><path d="M1585 1215q-39 125-123 250-129 196-257 196-49 0-140-32-86-32-151-32-61 0-142 33-81 34-132 34-152 0-301-259-147-261-147-503 0-228 113-374 113-144 284-144 72 0 177 30 104 30 138 30 45 0 143-34 102-34 173-34 119 0 213 65 52 36 104 100-79 67-114 118-65 94-65 207 0 124 69 223t158 126zm-376-1173q0 61-29 136-30 75-93 138-54 54-108 72-37 11-104 17 3-149 78-257 74-107 250-148 1 3 2.5 11t2.5 11q0 4 .5 10t.5 10z"/></svg>
+                  </div>
+                  <div>
+                    <div class="f6">Download on the</div>
+                    <strong class="font-size-1">App Store</strong>
+                  </div>
+                  </span>
+              </button>
+              <!-- End Button -->
+
+              <!-- Button -->
+              <button type="button" class="bg-black white bw0 br2 ph3 pv2 mh2 mv2">
+                <div class="flex items-center">
+                  <div class="h2 w2 mr2">
+                    <svg style="filter: invert(100%)" width="100%" height="100%" viewBox="0 0 50 50"><g><path style=" " d="M 7.125 2 L 28.78125 23.5 L 34.71875 17.5625 L 8.46875 2.40625 C 8.03125 2.152344 7.5625 2.011719 7.125 2 Z M 5.3125 3 C 5.117188 3.347656 5 3.757813 5 4.21875 L 5 46 C 5 46.335938 5.070313 46.636719 5.1875 46.90625 L 27.34375 24.90625 Z M 36.53125 18.59375 L 30.1875 24.90625 L 36.53125 31.1875 L 44.28125 26.75 C 45.382813 26.113281 45.539063 25.304688 45.53125 24.875 C 45.519531 24.164063 45.070313 23.5 44.3125 23.09375 C 43.652344 22.738281 38.75 19.882813 36.53125 18.59375 Z M 28.78125 26.3125 L 6.9375 47.96875 C 7.300781 47.949219 7.695313 47.871094 8.0625 47.65625 C 8.917969 47.160156 26.21875 37.15625 26.21875 37.15625 L 34.75 32.25 Z "></path></g></svg>
+                  </div>
+                  <div>
+                    <div class="f6">Get it on</div>
+                    <strong>Google Play</strong>
+                  </div>
+                  </span>
+              </button>
+              <!-- End Button -->
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Link Lists -->
+
+        <div class="bw1 bb b--light-gray pv4"></div>
+
+        <!-- Copyright -->
+        <div class="tc sans-serif pt4 pb5">
+          <!-- Logo -->
+          <a class="mb2 flex items-center justify-center no-underline" href="#" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"></path>
+              <path fill="#00dffc" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"></path>
+              <path fill="#377dff" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"></path>
+              <path fill="#fff" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"></path>
+            </svg>
+            <span class="f2 fw5 ph2 link blue no-underline">Front</span>
+          </a>
+          <!-- End Logo -->
+          <div class="f6 pt2 gray">Front. 2019 Htmlstream. All rights reserved.</div>
+        </div>
+        <!-- End Copyright -->
+      </div>
+    </body>
+</html>
+
+
